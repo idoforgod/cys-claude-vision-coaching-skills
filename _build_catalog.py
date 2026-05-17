@@ -15,8 +15,9 @@ skills/*/SKILL.md frontmatter를 스캔하여 README.md와 docs/SKILL_CATALOG.md
     <!-- /AUTO:BLOCK_NAME -->
 
 자동 갱신 블록:
-    README.md          : BADGE, STAGE_MAPPING
+    README.md          : BADGE, CATEGORY_TABLE, SKILL_INDEX
     SKILL_CATALOG.md   : TITLE_COUNT, CATEGORY_TABLE, SKILL_INDEX
+    (STAGE_MAPPING은 박사님이 직접 관리하는 *순서가 의미를 가지는 표* — 자동 갱신 제외)
 
 새 스킬 추가 절차:
     1) skills/<name>/SKILL.md 작성
@@ -329,6 +330,8 @@ def main() -> int:
     # 자동 정렬로 손상되지 않도록 자동 갱신 대상에서 제외한다.
     readme_blocks = {
         "BADGE": render_badge(skills),
+        "CATEGORY_TABLE": render_category_table(skills),
+        "SKILL_INDEX": render_skill_index(skills),
     }
     catalog_blocks = {
         "TITLE_COUNT": render_title_count(skills),
