@@ -1,4 +1,4 @@
-# CYS Vision Coaching Skills
+# CYS Futures Vision Coaching Skills
 
 > **최윤식 박사의 미래준비학교 — Claude Code Skills Package**
 > *Dr. Choi Yoon-Sik's Future Preparation School — Claude Code Skills Package*
